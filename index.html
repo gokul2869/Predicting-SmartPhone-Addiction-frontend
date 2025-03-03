@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartphone Addiction Predictor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+      <nav>
+                <img src="logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+            </nav>
+        <h1>Smartphone Addiction Predictor</h1>
+    </header>
+    <main>
+        <section id="input-section">
+            <h2>Enter Your Usage Details</h2>
+            <form id="usage-form">
+                <label for="screen-time">Daily Screen Time (in hours):</label>
+                <input type="number" id="screen-time" name="screen-time" required>
+
+                <label for="app-usage">Daily App Usage Frequency:</label>
+                <input type="number" id="app-usage" name="app-usage" required>
+
+                <label for="interaction">Daily Interaction Patterns (e.g., social media, games, work-related):</label>
+                <input type="text" id="interaction" name="interaction" required>
+
+                <label for="sleep-quality">Sleep Quality (Rate from 1 to 5):</label>
+                <input type="number" id="sleep-quality" name="sleep-quality" min="1" max="5" required>
+
+                <label for="stress-level">Daily Stress Level (Rate from 1 to 5):</label>
+                <input type="number" id="stress-level" name="stress-level" min="1" max="5" required>
+
+                <label for="mood">Overall Mood (Rate from 1 to 5):</label>
+                <input type="number" id="mood" name="mood" min="1" max="5" required>
+                
+                <label for="physical-activity">Physical Activity (Hours per day):</label>
+                <input type="number" id="physical-activity" name="physical-activity" required>
+
+                <button type="submit">Predict Addiction Level</button>
+            </form>
+        </section>
+        <section id="result-section">
+            <h2>Prediction Result</h2>
+            <div id="prediction-result"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Smartphone Addiction Predictor</p>
+    </footer>
+</body>
+</html>
